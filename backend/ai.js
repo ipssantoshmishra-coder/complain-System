@@ -41,7 +41,7 @@ export async function getSolution(text) {
     return solution;
   } catch (err) {
     console.error("❌ AI Error:", err.message);
-    return "No Solution found"; // <-- fallback instead of throwing
+    return "No modified Solution found"; // <-- fallback instead of throwing
   }
 
 } 
