@@ -45,7 +45,7 @@ app.post("/api/complaints", async (req, res) => {
   try {
     const { name, email, complaint } = req.body;
     const sentiment = await analyzeSentiment(complaint);
-    const solution =await getSolution(complaint);
+    const solution = await getSolution(complaint);
 
     const newComplaint = new Complaint({
       name,
